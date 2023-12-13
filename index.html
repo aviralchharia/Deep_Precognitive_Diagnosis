@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Schizo-Net: A novel Schizophrenia Diagnosis Framework Using Late Fusion Multimodal Deep Learning on EEG-Based Brain Connectivity Indices.">
+  <meta name="keywords" content="Schizophrenia, Deep Learning, Brain Connectivity Features, Feature Fusion, Classification">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schizo-Net: A novel Schizophrenia Diagnosis Framework Using Late Fusion Multimodal Deep Learning on EEG-Based Brain Connectivity Indices</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/Picture2.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://aviralchharia.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://neurodiag.github.io/PyNoetic/">
+            PyNoetic
+          </a>
+          <!-- <a class="navbar-item" href="https://BCI-Review.github.io">
+            20 years of Visual Stimuli evoked P300 BCI
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-4 has-text-centered">
+                <img src="static/images/Schizo-Net.png" alt="Schizo-Net" style="width: 200px"/>
+            </div>
+        </div>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Schizo-Net: A novel Schizophrenia Diagnosis Framework Using Late Fusion Multimodal Deep Learning on EEG-Based Brain Connectivity Indices</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/nitin-grover-5a8362167">Nitin Grover</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://aviralchharia.github.io/">Aviral Chharia</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://eced.thapar.edu/facultydetails/MTI0NQ">Rahul Upadhyay</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="http://lucalongo.eu/about/about.html">Luca Longo</a><sup>2</sup>
+            </span>
+          </div>
+
+
+	 <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Thapar Institute of Engineering &amp; Technology</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>TU Dublin Ireland</span>
+            <br>
+            <span class="brmod"><i>accepted at</i></span>
+            <br>
+            <span><b style="color:rgb(255, 100, 100);">IEEE Transactions on Neural Systems & Rehabilitation Engineering, 2023</b></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/document/10023506"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10023506"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/NeuroDiag/Schizo-Net"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Schizophrenia (SCZ) is a serious mental condition that causes hallucinations, delusions, and disordered thinking. 
+            Traditionally, SCZ diagnosis involves the subject’s interview by a skilled psychiatrist. The process needs time and 
+            is bound to human errors and bias. Recently, brain connectivity indices have been used in a few pattern recognition 
+            methods to discriminate neuro-psychiatric patients from healthy subjects. The study presents Schizo-Net, a novel, 
+            highly accurate, and reliable SCZ diagnosis model based on a late multimodal fusion of estimated brain connectivity 
+            indices from EEG activity. First, the raw EEG activity is pre-processed exhaustively to remove unwanted artifacts. 
+            Next, six brain connectivity indices are estimated from the windowed EEG activity, and six different deep learning 
+            architectures (with varying neurons and hidden layers) are trained. The present study is the first which considers 
+            a large number of brain connectivity indices, especially for SCZ. A detailed study was also performed that identifies 
+            SCZ-related changes occurring in brain connectivity, and the vital significance of BCI is drawn in this regard to 
+            identify the biomarkers of the disease. Schizo-Net surpasses current models and achieves 99.84% accuracy. An optimum 
+            deep learning architecture selection is also performed for improved classification. The study also establishes that 
+            Late fusion technique outperforms single architecture-based prediction in diagnosing SCZ.
+            <br>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  <figure class="image" id="fig-method">
+  <img src="static/images/model_architecture.png" class="image-spacing, center" style="width: 500px">
+  <br>
+  <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+  <h2 class="title is-size-6">Illustration of Schizo-Net and its flow for pre-processing, feature extraction and late fusion classification.</h2>
+  </div>
+  </div>
+  </div>
+  </figure>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- A -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Summary</h2>
+        <div class="content has-text-justified">
+        </div>
+          <div class="content has-text-justified">
+		  
+     <figure class="image" id="fig-method">
+      <img src="static/images/adjacency-matrices.png" class="center" style="width: 500px">
+        <h2 class="title is-size-6">Difference in average adjacency matrices of (a) PLV, (b) PLI,
+        (c) DTF, (d) PDC, (e) SL, (f) COR connectivity methods, shown in the
+        form of an adjacency matrix.</h2>
+        </figure>
+       <p>
+      Schizophrenia is a serious mental condition that causes hallucinations, delusions, and disordered thinking. 
+      Traditionally, Schizophrenia diagnosis involves the subject’s interview by a skilled psychiatrist. This process 
+      needs time and is bound to human errors and bias. The goal of this project was to develop a faster computational 
+      alternative of Schizophrenia diagnosis in patients thereby mitigating the inductive bias due to human diagnosis. 
+      <br>
+      <br>
+      We developed Schizo-Net: a novel, highly accurate, and reliable Schizophrenia diagnosis model based on a late 
+      multimodal fusion of estimated brain connectivity indices from EEG activity. Schizo-Net is based on the fact 
+      that brain connectivity indices can be used to discriminate neuro-psychiatric patients from healthy subjects. 
+      First, the raw EEG activity is pre-processed exhaustively to remove unwanted artifacts. Next, six brain 
+      connectivity indices are estimated from the windowed EEG activity, and six different deep learning architectures,
+      with varying neurons and hidden layers were trained. Here, the goal was to select the best neural network 
+      architecture that could help increase the precision of Schizophrenia diagnosis. 
+      <br>
+      <br>
+      Our results found that Schizo-Net surpasses current state-of-the-art Schizophrenia diagnosis models and 
+      achieves 99.84% accuracy. Experiments performed on varying neural network architectures also established 
+      that Late fusion technique outperforms single architecture-based prediction in diagnosing Schizophrenia. 
+      These results underscore the potential of Schizo-Net as a valuable tool in the precise diagnosis of Schizophrenia. 
+      <br>
+      <br>
+      In conclusion, using Schizo-Net, psychiatrists can massively reduce the time, human bias and errors that often accompany 
+      Schizophrenia diagnosis. Schizo-Net’s ability to diagnose Schizophrenia precisely, positions it as a versatile and 
+      enduring tool. Next steps for the project involve deploying the Schizo-Net for a clinical trial and testing its 
+      performance over a wide survey sample of patients diagnosed with Schizophrenia.
+            <br>
+            <br>
+          </p>          
+      <figure class="image" id="fig-method">
+	 <img src="static/images/brain-connectivity-measures.png" class="center" style="width: 750px">
+         <h2 class="title is-size-6">Group differences as graphs for different connectivity measures including PLV, PLI, DTF, PDC, SL and COR. 
+		 Here rows represent (a) Healthy patient and (b) SCZ Patient.</h2>
+      </div>
+      </figure>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Animation.
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Animation</h2>
+
+        <h3 class="title is-4">Re-rendering the input video</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      
+      </div>
+    </div>
+    Animation. -->
+
+
+    <!-- Concurrent Work.
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{grover2023schizo,
+  title={Schizo-Net: A novel Schizophrenia Diagnosis framework using late fusion multimodal deep learning on Electroencephalogram-based Brain connectivity indices},
+  author={Grover, Nitin and Chharia, Aviral and Upadhyay, Rahul and Longo, Luca},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+  volume={31},
+  pages={464--473},
+  year={2023},
+  publisher={IEEE}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10023506">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/NeuroDiag/Schizo-Net/" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
